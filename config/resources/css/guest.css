@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,700i,900&display=swap');
+
+body {
+    background-color: #f4ede5;
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+}
+
+body, input, button, textarea {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+main {
+    max-width: 960px;
+    width: 100%;
+    background: white;
+    border: 2px solid #dfd1c2;
+    border-radius: 10px;
+    display: flex;
+    justify-content: left;
+    margin: auto;
+}
+ 
+img{
+    margin: 5px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+img:hover{
+    transition: 2s ease;
+    opacity: 0.3;
+}
+
+
+main .main_left {
+   width: 40%;
+   background-size: cover;
+   border-radius: 10px 0 0 10px;
+}
+
+main .main_right {
+    width: 60%;
+    padding-bottom: 20px;
+    text-align: center;
+    min-height: 500px;
+}
+
+.main_right input, .main_right div{
+    margin-top: 10px;
+}
+
+
+
+main h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 20%;
+    margin-bottom: 20px;
+}
+
+main .error {
+    padding: 4px 10px;
+    color: #fa1c2c;
+    margin: 5px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+
+form {
+    max-width: 350px;
+    margin-top: 10px;
+    display: inline-block; 
+}
+
+form input {
+    width: 100%;
+}
+
+input[type=text], input[type=password], input[type=date], input[type=time], input[type=button] {
+    background-color: #f4ede5;
+    padding: 8px;
+    border: 2px solid #f4ede5;
+    color: #8d7e7e;
+    border-radius: 6px;
+    width: -webkit-fill-available;
+
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #2e1061;
+    border: 0;
+    border-radius: 4px;
+    padding: 10px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+input[type=image] {
+    width: 35px;
+    height: 35px;
+}
+
+
+
+#main_create_pool{
+    width: 50%;
+}
+
+.create_pool {
+   margin-left: 20%;
+}
+
+
+textarea[name="descrizione"]{
+    width: 70%;
+    background-color: #f4ede5;
+    padding: 16px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    border-radius: 4px;
+}
+
+
+#fine{
+    font-size: 3em;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    background-color: rgb(34, 185, 170);
+    text-align: center;
+}
+
+
+input[type=button]{
+    color: white;
+    background-color: rgb(34, 185, 170);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+.hidden{
+    display: none;
+}
+
+
+input[name='opzione[]']{
+    margin-bottom: 10px;
+}
+
+.scelta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.scelta h1, .scelta form{
+    margin-top: 20%;
+}
+
+
+/*      Errore del register    */
+
+.Errore p{
+    color: red;
+    width: 100%;
+    margin: 10px 5px 5px 10px;     
+}
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 960px) {
+    
+    main .main_left {
+        width: 30%;
+        border-radius: 10px 0 0 10px;
+    }
+
+    main .main_right {
+        width: 70%;
+        padding-bottom: 19px;
+    }
+    
+}
+
+@media (max-width: 800px){
+    main .main_left {
+        width: 25%;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .main_right {
+        width: 75%;
+        padding-bottom: 15px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    main .main_left {
+        width: 22%;
+        border-radius: 10px 0 0 10px;
+    }
+
+    main .main_right {
+        width: 78%;
+        padding-bottom: 19px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    main .main_left {
+        width: 15%;
+        border-radius: 10px 0 0 10px;
+    }
+
+    main .main_right {
+        width: 85%;
+        padding-bottom: 19px;
+    }
+}
